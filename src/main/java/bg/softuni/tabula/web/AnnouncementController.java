@@ -16,9 +16,11 @@ public class AnnouncementController {
 
     // TODO: Role user
     @GetMapping
-    public String announcement(Model model){
+    public String announcement(Model model) {
 
-        return null;
+        model.addAttribute("announcements", this.announcementService.findAll());
+
+        return "announcement/announcements";
     }
 
 }
