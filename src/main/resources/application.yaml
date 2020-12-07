@@ -35,9 +35,8 @@ spring:
           enabled: true
           paths: /css/**
 
-#tabula:
-#  clean-up: "0 0 2 ? * SUN"
-
+tabula:
+  clean-up: "0 0 2 ? * SUN"
 server:
   compression:
     enabled: true
